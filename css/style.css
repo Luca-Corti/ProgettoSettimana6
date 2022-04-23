@@ -1,0 +1,186 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    display: inline-block;
+}
+
+.row {
+    width: 1250px;
+    margin:12vh auto;
+}
+
+.box {
+    width: 50%;
+    margin: auto;
+}
+h2 {
+  margin: 0 0 40px 0;
+}
+
+.numclicks {
+   display: flex;
+   justify-content: space-around;
+   align-content: flex-start;
+}
+
+.images {
+    background: rgba(0,218,219,1);
+    width: 140px;
+    height: 140px;
+    margin: 5px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.images img {
+    padding: 5px;
+    display: none;
+  
+}
+.griglia {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.rigioca {
+    font-family: 'Montserrat Alternates', sans-serif;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 10px 10px;
+    background: rgb(15, 15, 15);
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.found {
+    -webkit-animation: jello-vertical 0.9s both;
+    animation: jello-vertical 0.9s both;
+}
+@keyframes jello-vertical {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(0.85, 1.15, 1);
+              transform: scale3d(0.85, 1.15, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+  }
+.modale {
+    width: 70%;
+    height: 80%;
+    position: absolute;
+    left:15%;
+    top:5%;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgba(186, 248, 202, 0.75);
+}
+.modale h2 {
+    text-align: center;
+    font-size: 60px;
+}
+.victory {
+    width:300px;
+    height:300px;
+    -webkit-animation: jello-horizontal 2s infinite both;
+    animation: jello-horizontal 2s infinite both;
+}
+@keyframes jello-horizontal {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+              transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+  }
+
+  #gioca {
+    width: 100vw;
+    height:100vh;
+    background-color: rgba(0,218,219,1);
+    font-size: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #gioca p {
+    cursor: pointer;
+    padding:20px;
+    border: 3px solid black;
+  }
+
+  .unmuted{
+    background-image: url("../img/volume.png");
+    width:30px;
+    height:30px;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+.unmuted.muted{
+    background-image: url("../img/mute.png");
+    width:30px;
+    height:30px;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
